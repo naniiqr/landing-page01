@@ -227,6 +227,10 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(115deg, rgba(9, 18, 33, 0.94) 20%, rgba(9, 18, 33, 0.72) 55%, rgba(9, 18, 33, 0.5) 100%), url('../img/hero.webp') center/cover no-repeat;
 }
 
+.hero-corporate {
+  background: linear-gradient(115deg, rgba(9, 18, 33, 0.94) 20%, rgba(9, 18, 33, 0.72) 55%, rgba(9, 18, 33, 0.5) 100%), url('../img/hero-corporate-website.webp') center/cover no-repeat;
+}
+
 .hero-container {
   width: 100%;
   padding-left: max(24px, calc((100vw - 1180px) / 2));
@@ -346,6 +350,7 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------------- Feature blocks (01-06) ---------------- */
 .features { padding: 30px 0 100px; background: var(--paper-soft); }
+.features-single { padding-bottom: 40px; }
 
 .feature-row {
   display: grid;
@@ -495,6 +500,40 @@ button { font-family: inherit; cursor: pointer; }
 .compare-card.before .compare-list li svg { color: #ff8f8f; }
 .compare-card.after .compare-list li svg { color: #6de3a8; }
 
+/* ---------------- Dolores ---------------- */
+.pains { padding: 90px 0; background: var(--navy-900); color: #fff; }
+.pains .section-title { color: #fff; }
+
+.pain-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.pain-card {
+  padding: 30px 28px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pain-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 138, 46, 0.16);
+  color: var(--orange-400);
+  margin-bottom: 18px;
+}
+.pain-icon svg { width: 21px; height: 21px; }
+
+.pain-card h3 { font-size: 18px; font-weight: 800; color: #fff; }
+.pain-card p { margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,0.68); }
+
 /* ---------------- Contenido de redes (dentro del bloque 04) ---------------- */
 .feature-detail {
   padding: 8px 0 56px;
@@ -632,6 +671,23 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: var(--shadow-lg);
   transform: translateY(-8px);
 }
+
+.price-single {
+  max-width: 480px;
+  margin: 46px auto 0;
+}
+.price-single .price-card.featured { transform: none; }
+
+.price-section-label {
+  margin-top: 26px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-400);
+}
+
+.content-list.on-dark li { color: rgba(255, 255, 255, 0.9); border-top-color: rgba(255, 255, 255, 0.14); }
 
 .price-ribbon {
   position: absolute;
@@ -882,6 +938,7 @@ button { font-family: inherit; cursor: pointer; }
   .price-grid { grid-template-columns: 1fr; }
   .price-card.featured { transform: none; }
   .trust-grid { grid-template-columns: 1fr; }
+  .pain-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }
 }
 
