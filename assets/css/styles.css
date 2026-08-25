@@ -243,6 +243,12 @@ button { font-family: inherit; cursor: pointer; }
   background: linear-gradient(115deg, rgba(9, 18, 33, 0.94) 20%, rgba(9, 18, 33, 0.72) 55%, rgba(9, 18, 33, 0.5) 100%), url('../img/hero.webp') center/cover no-repeat;
 }
 
+.hero-container {
+  width: 100%;
+  padding-left: max(24px, calc((100vw - 1180px) / 2));
+  padding-right: 24px;
+}
+
 .hero-inner {
   max-width: 660px;
 }
@@ -505,21 +511,25 @@ button { font-family: inherit; cursor: pointer; }
 .compare-card.before .compare-list li svg { color: #ff8f8f; }
 .compare-card.after .compare-list li svg { color: #6de3a8; }
 
-/* ---------------- Contenido de redes ---------------- */
-.content-detail { padding: 90px 0; background: #fff; }
+/* ---------------- Contenido de redes (dentro del bloque 04) ---------------- */
+.feature-detail {
+  padding: 8px 0 56px;
+  margin-top: -16px;
+}
 
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
-  margin-top: 46px;
+  margin-top: 22px;
 }
 
 .content-card {
-  background: var(--paper-soft);
+  background: #fff;
   border-radius: var(--radius-lg);
   padding: 34px 32px;
   border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .content-card h3 {
