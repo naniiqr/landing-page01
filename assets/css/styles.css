@@ -757,6 +757,32 @@ button { font-family: inherit; cursor: pointer; }
 }
 .price-banner strong { color: var(--orange-600); }
 
+.reframe-box {
+  margin: 34px auto 0;
+  max-width: 560px;
+  text-align: center;
+  padding: 34px 32px;
+  border-radius: var(--radius-lg);
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
+}
+
+.reframe-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--navy-900);
+  color: var(--orange-400);
+  margin-bottom: 16px;
+}
+.reframe-icon svg { width: 22px; height: 22px; }
+
+.reframe-q { font-size: 19px; font-weight: 800; color: var(--navy-900); }
+.reframe-a { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
+
 /* ---------------- Guarantee + scarcity ---------------- */
 .trust { padding: 0 0 90px; background: #fff; }
 
