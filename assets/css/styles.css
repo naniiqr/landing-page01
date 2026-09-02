@@ -983,9 +983,9 @@ button { font-family: inherit; cursor: pointer; }
 .sector-icon { display: inline-flex; color: var(--orange-400); }
 .sector-icon svg { width: 16px; height: 16px; }
 
-/* ---------------- Proyectos reales (galería) ---------------- */
-.gallery { padding: 40px 0 0; background: #fff; }
-.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+/* ---------------- Trabajamos con negocios como (galería) ---------------- */
+.gallery { padding: 80px 0; background: #fff; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .gallery-item {
   position: relative;
   margin: 0;
@@ -996,7 +996,7 @@ button { font-family: inherit; cursor: pointer; }
 .gallery-item img {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 190px;
   object-fit: cover;
 }
 .gallery-item figcaption {
@@ -1179,6 +1179,7 @@ button { font-family: inherit; cursor: pointer; }
   .flagship-compare { grid-template-columns: 1fr; }
   .fit-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -1208,6 +1209,7 @@ button { font-family: inherit; cursor: pointer; }
   .value-total { flex-direction: column; align-items: flex-start; gap: 6px; }
   .footer-top { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .gallery-item img { height: 220px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .gallery-item img { height: 130px; }
+  .gallery-item figcaption { padding: 10px 12px; font-size: 12px; }
 }
