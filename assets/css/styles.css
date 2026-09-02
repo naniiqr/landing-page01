@@ -1111,6 +1111,21 @@ button { font-family: inherit; cursor: pointer; }
 .flagship-price-alt { margin-top: 8px; font-size: 14.5px; color: rgba(255, 255, 255, 0.6); }
 .flagship-price .price-bonus { margin: 20px auto 0; max-width: 640px; color: rgba(255, 255, 255, 0.85); }
 
+.flagship-price-card {
+  position: relative;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+.flagship-price-card .price-amount { color: var(--navy-900); }
+.flagship-price-card .flagship-price-note { color: var(--ink-soft); }
+.flagship-price-card .flagship-price-alt { color: var(--ink-soft); }
+.flagship-price-card .price-bonus { background: rgba(245, 130, 15, 0.1); color: var(--navy-800); }
+
 .flagship-note {
   margin-top: 14px;
   font-size: 14px;
