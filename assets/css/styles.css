@@ -510,6 +510,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ---------------- Dolores ---------------- */
 .pains { padding: 90px 0; background: var(--navy-900); color: #fff; }
 .pains .section-title { color: #fff; }
+.pains .section-lead { color: #fff; }
 
 .pain-grid {
   margin-top: 50px;
@@ -960,31 +961,8 @@ button { font-family: inherit; cursor: pointer; }
   100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 10px 26px rgba(37,211,102,0.4); }
 }
 
-/* ---------------- Sector strip (home hero) ---------------- */
-.sector-strip-wrap {
-  position: relative;
-  z-index: 2;
-  margin-top: 46px;
-  padding: 18px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
-.sector-strip { display: flex; flex-wrap: wrap; gap: 20px 30px; }
-.sector-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-}
-.sector-icon { display: inline-flex; color: var(--orange-400); }
-.sector-icon svg { width: 16px; height: 16px; }
-
 /* ---------------- Trabajamos con negocios como (galería) ---------------- */
-.gallery { padding: 80px 0; background: #fff; }
+.gallery { padding: 80px 0 40px; background: #fff; }
 .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .gallery-item {
   position: relative;
@@ -1012,7 +990,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* ---------------- La diferencia ---------------- */
-.diff { padding: 80px 0; background: #fff; }
+.diff { padding: 40px 0 80px; background: #fff; }
 .diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 .diff-icon {
   display: inline-flex;
@@ -1030,7 +1008,7 @@ button { font-family: inherit; cursor: pointer; }
 .diff-card p { margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); }
 
 /* ---------------- Frase de posicionamiento ---------------- */
-.positioning { padding: 35px 0; background: var(--paper-soft); text-align: center; }
+.positioning { padding: 35px 0; background: var(--paper); text-align: center; }
 .positioning-quote {
   font-size: clamp(22px, 3vw, 30px);
   font-weight: 800;
@@ -1154,7 +1132,7 @@ button { font-family: inherit; cursor: pointer; }
 .fit-card.no .compare-list li svg { color: #d64545; }
 
 /* ---------------- FAQ ---------------- */
-.faq { padding: 90px 0; background: var(--paper-soft); }
+.faq { padding: 45px 0 90px; background: var(--paper-soft); }
 .faq-list { max-width: 820px; margin: 46px auto 0; display: flex; flex-direction: column; gap: 14px; }
 .faq-item { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 6px 24px; }
 .faq-item summary {
