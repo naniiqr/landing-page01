@@ -197,8 +197,31 @@ button { font-family: inherit; cursor: pointer; }
 }
 .nav-links a:hover { color: #fff; }
 
-.nav-links-full { gap: 18px; }
+.nav-links-full { gap: 14px; }
 .nav-links-full a { font-size: 12px; letter-spacing: 0.02em; white-space: nowrap; }
+.nav-panel:has(.nav-links-full) { gap: 18px; }
+.nav-panel:has(.nav-links-full) .nav-cta { padding: 12px 18px; font-size: 13px; }
+
+@media (max-width: 1180px) {
+  .header:has(.nav-links-full) .nav-panel { display: none; }
+  .header:has(.nav-links-full) .nav-toggle { display: flex; }
+  .header.nav-open:has(.nav-links-full) .nav-panel {
+    display: flex;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    background: var(--navy-900);
+    padding: 18px 24px 26px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .header.nav-open:has(.nav-links-full) .nav-links { flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; }
+  .header.nav-open:has(.nav-links-full) .nav-links a { padding: 12px 0; width: 100%; }
+  .header.nav-open:has(.nav-links-full) .nav-cta { margin-top: 10px; padding: 15px 30px; font-size: 15px; }
+}
 
 .header-actions {
   display: flex;
@@ -327,6 +350,18 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 13px;
   font-weight: 800;
   margin-bottom: 14px;
+}
+
+.card-month {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--orange-600);
 }
 
 .summary-card h3 {
