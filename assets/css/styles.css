@@ -277,6 +277,7 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 800;
   line-height: 1.14;
   letter-spacing: -0.01em;
+  color: #fff;
 }
 .hero h1 .accent { color: var(--orange-400); }
 
@@ -763,6 +764,7 @@ button { font-family: inherit; cursor: pointer; }
   letter-spacing: -0.01em;
 }
 .price-amount span { font-size: 16px; font-weight: 700; color: var(--ink-soft); }
+.price-card.featured .price-amount { color: #fff; }
 .price-card.featured .price-amount span { color: rgba(255,255,255,0.6); }
 
 .price-desc {
@@ -903,6 +905,7 @@ button { font-family: inherit; cursor: pointer; }
   max-width: 780px;
   margin: 18px auto 0;
   line-height: 1.22;
+  color: #fff;
 }
 
 .final-cta p {
